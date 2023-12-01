@@ -23,14 +23,31 @@ $(function () {
 });
 
 
-
+var currentTime;
 
 function setTime (){
   setInterval(function()  {
     var time = $("#currentDay");
-    var currentTime = dayjs().format('dddd, MMM D, YYYY HH:mm:ss a');
-  time.text(currentTime);
-    
+    currentTime = dayjs().format('[Date: ] dddd, MMM D, YYYY [ - Time: ]HH:mm:ss a');
+    time.text(currentTime);
   }, 1000);
 }
 setTime();
+function colorTime(){
+  setInterval(function(){
+
+  var milTime = dayjs().format('HH')
+  console.log(milTime.toString());
+
+  if (milTime > ) {
+    
+  }
+
+  },1000);
+
+}
+colorTime();
+
+// if (condition) {
+  
+// }

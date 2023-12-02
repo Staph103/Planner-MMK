@@ -39,9 +39,10 @@ function colorTime(){
   var milTime = dayjs().format('HH')
   console.log(milTime.toString());
 
-  if (milTime > ) {
+
+  // if (milTime > ) {
     
-  }
+  // }
 
   },1000);
 
@@ -51,3 +52,14 @@ colorTime();
 // if (condition) {
   
 // }
+var plannerTime = ['9','10','11','12','13','14','15','16','17']
+
+
+// $('.savveBtn').onclick(function (Save){
+  
+//   var text = $("textarea").val()
+//   localStorage.getItem('',)
+// })
+
+// var text = $("").val()
+// console.log(text);

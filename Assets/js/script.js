@@ -52,17 +52,24 @@ $('.saveBtn').on("click", function () {
   // get the id attribute of the parent div element
   var timeKey = $(this).parent().attr('id');
   localStorage.setItem(timeKey, text);
+  //tells user a new appointment was added and displays the appointment text as long as theres a value in local storage
+  if (text) {
+    var newAppointment = document.createElement('p');
+    newAppointment.textContent = "New appointent added " + text + " ✅";
+    var app = document.querySelector('.appointment')
+    app.append(newAppointment);
+  }
 
 });
 
 
-//sets the military time hours to a variable to be used for if statements in line 66
+//sets the military time hours to a variable to be used for if statements in line 73
 var milTime = dayjs().format('HH');
 //For each id with class time block removes the "hours-"
 $('.time-block').each(function () {
 
   var timeSlot = parseInt($(this).attr('id').split("hours-")[1]);
-//argument for past present and future classes comparing the newly split id to the military time variable
+  //argument for past present and future classes comparing the newly split id to the military time variable
   if (timeSlot < milTime) {
 
     $(this).addClass('past')

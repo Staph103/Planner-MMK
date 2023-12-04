@@ -16,7 +16,7 @@ SO THAT I can manage my time effectively
 The following images demonstrates the web application's appearance and functionality:
 
 
-![screenshot](/Images/workDayPlanner.png)
+![screenshot](/Images/planner.png)
 
 
 

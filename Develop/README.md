@@ -6,7 +6,11 @@ I WANT to add important events to a daily planner
 
 SO THAT I can manage my time effectively
 
+
+
 ## Deployment
+
+https://staph103.github.io/Planner-MMK/
 
 
 
@@ -14,6 +18,7 @@ SO THAT I can manage my time effectively
 
 
 The following images demonstrates the web application's appearance and functionality:
+
 
 
 ![screenshot](/Images/planner.png)
@@ -49,5 +54,15 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 
 THEN the saved events persist
+
+
+
+## Resources
+
+
+Thomas Gilmore (tutor)
+
+
+
 
 
